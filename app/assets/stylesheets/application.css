@@ -13,8 +13,11 @@
  */
 
 body { padding-top: 70px; }
-.header {
 
-	padding-right: 70px; 
+#form-title{
+	
+text-color: #ecf0f1;
 
 }
+
+jumbotron { $text-color: black; }
