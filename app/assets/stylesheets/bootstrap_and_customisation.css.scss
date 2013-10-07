@@ -7,7 +7,7 @@ $navbar-default-bg:                          white;
 $navbar-default-brand-color:      #2980b9;
 $brand-primary:                                    #c0392b;
 $jumbotron-bg:                                         white;
-$link-color: 				black;
+$link-color: 				white;
 $text-color: 			black;
 
 @import 'bootstrap';
@@ -23,5 +23,10 @@ $text-color: 			black;
 .btn-primary {
 	background-color: #2980b9;
 	border-color: black;
+
+}
+
+.blue-bg-text {
+	color: white;
 }
 
