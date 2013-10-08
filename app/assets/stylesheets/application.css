@@ -16,6 +16,13 @@ body { padding-top: 70px; }
 
 
 
+body { 
+
+	padding-left: 35px; 
+	padding-right: 35px;
+}
+
+
 #form-title{
 	
 text-color: #ecf0f1;
