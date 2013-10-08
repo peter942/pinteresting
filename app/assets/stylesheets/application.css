@@ -30,3 +30,8 @@ text-color: #ecf0f1;
 }
 
 jumbotron { $text-color: black; }
+
+.panel-default {
+	
+	padding-left: 100px;
+}
