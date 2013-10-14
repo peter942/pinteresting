@@ -7,7 +7,7 @@ $navbar-default-bg:                          white;
 $navbar-default-brand-color:      #2980b9;
 $brand-primary:                                    #c0392b;
 $jumbotron-bg:                                         white;
-$link-color: 				white;
+$link-color: 				black;
 $text-color: 			black;
 
 @import 'bootstrap';
@@ -26,9 +26,6 @@ $text-color: 			black;
 
 }
 
-.blue-bg-text {
-	color: white;
-}
 
 #warnings {
 	text-align: center;
@@ -40,5 +37,11 @@ $text-color: 			black;
 	
 	text-align: center;
 
+}
+
+.table { 
+
+padding-left: 35px; 
+padding-right: 35px;
 }
 

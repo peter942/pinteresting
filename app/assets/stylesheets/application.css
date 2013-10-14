@@ -16,11 +16,12 @@ body { padding-top: 70px; }
 
 
 
+/*
 body { 
 
 	padding-left: 35px; 
 	padding-right: 35px;
-}
+} */
 
 
 #form-title{
@@ -31,7 +32,8 @@ text-color: #ecf0f1;
 
 jumbotron { $text-color: black; }
 
-.panel-default {
+/*
+ .panel-default {
 	
 	padding-left: 100px;
-}
+} */
