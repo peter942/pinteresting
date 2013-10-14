@@ -9,6 +9,7 @@
 
   <thead>
     <tr>
+      <th>Thumbnail </th>
       <th>User</th>
       <th>Description</th>
       <th></th>
@@ -24,7 +25,11 @@
 
   <tbody>
     <% @pins.each do |pin| %>
+
       <tr>
+
+        <td> <%= image_tag pin.image(:thumb)%> </td>
+
 
         <b> <td><%= pin.user.username %></td> </b>
 

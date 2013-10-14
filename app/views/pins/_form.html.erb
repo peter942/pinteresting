@@ -1,9 +1,15 @@
-<%= simple_form_for(@pin) do |f| %>
+<%= simple_form_for @pin, html: { multipart: true } do |f| %>
   <%= f.error_notification %>
 
   <div class="form-inputs">
     <%= f.input :description %>
   </div>
+ 
+ <br>
+
+  <div class="form-inputs">
+  	<%= f.input :image, as: :file, label: "Upload an image" %>
+
 
   <div class="form-actions">
     <%= f.button :submit %>
