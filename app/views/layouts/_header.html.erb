@@ -24,9 +24,23 @@
 
 				<li><%= link_to "Add Pin", new_pin_path %> </li>
 
-				 <li><%= link_to "Edit your Account", edit_user_registration_path %> </li>
+				 <li> </li>
 
- 				<li><%= link_to "Log out", destroy_user_session_path, method: :delete %> </li>
+
+<li>
+
+	 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><%=current_user.username %> <b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><a href="<%= edit_user_registration_path %>">Edit</a></li>
+          <li><a href="<%= destroy_user_session_path %>">Log out</a></li>
+        </ul>
+      </li>
+    </ul>
+
+ </li>
+
+
+ 				
 
 	<% else %>
 
