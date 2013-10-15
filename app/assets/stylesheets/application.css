@@ -9,10 +9,14 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
+ *= require 'masonry/transitions'
  *= require_tree .
  */
 
-body { padding-top: 70px; }
+body { 	padding-top: 70px; 
+		padding-left: 30px; 
+		padding-right: 30px;
+
 
 
 
@@ -37,4 +41,5 @@ jumbotron { $text-color: black; }
 	
 	padding-left: 100px;
 } */
+
 
