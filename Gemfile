@@ -12,6 +12,7 @@ gem 'bootstrap-sass', github: 'thomas-mcdonald/bootstrap-sass', branch: '3'
 gem 'simple_form'
 gem 'devise', '~> 3.1.1' #this is the latest version and has been updated since the video
 gem 'paperclip', '~> 3.0'
+gem 'aws-sdk'
 
 
 group :development, :test do
