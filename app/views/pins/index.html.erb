@@ -1,3 +1,7 @@
+<%= render 'pages/home' unless user_signed_in? %>
+
+
+
 <div id="pins" class="transitions-enabled">
   <% @pins.each do |pin| %>
     <div class="box panel panel-default">
@@ -9,11 +13,24 @@
       </center>
 
       <div class="panel-body">
+<center>
 
-          <% if pin.user == current_user %>
-              <%= link_to 'Edit', edit_pin_path(pin) %>
-              <%= link_to 'Delete', pin, method: :delete, data: { confirm: 'Are you sure?' } %>
-          <% end %>
+  <% if pin.user == current_user %>
+              
+      <button type="button" class="btn btn-sm btn-default">
+        <span class="glyphicon glyphicon-trash"></span>  <%= link_to 'Delete', pin, method: :delete, data: { confirm: 'Are you sure?' } %>
+      </button>
+
+      <button type="button" class="btn btn-sm btn-default">
+        <span class="glyphicon glyphicon-edit"></span>  <%= link_to 'Edit', edit_pin_path(pin) %>
+      </button>
+
+  <% end %>
+
+</center>
+
+
+
       </div>
     </div>
   <% end %>
