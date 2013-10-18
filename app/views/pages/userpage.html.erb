@@ -1,16 +1,16 @@
-<div id="pins" class="transitions-enabled">
-    <% pins.each.current_user do |pin| %>
+<div id="@pins" class="transitions-enabled">
+    <% @pins.each(current_user) do |pin| %>
       <div class="box panel panel-default">
         
         <center>
-          <%= link_to image_tag(pin.image(:medium)), pin %> 
-          <%= pin.description %> <b>by</b> <%= pin.user.username %>
+          <%= link_to image_tag(pin.image(:medium)), @pin %> 
+          <%= @pin.description %> <b>by</b> <%= @pin.user.username %>
         </center>
 
       <div class="panel-body">
 
   <center>
-      <% if pin.user == current_user %>
+      <% if @pin.user == current_user %>
                 
           <button type="button" class="btn btn-sm btn-default"> <span class="glyphicon glyphicon-trash"></span>  <%= link_to 'Delete', pin, method: :delete, data: { confirm: 'Are you sure?' } %> </button>
           
